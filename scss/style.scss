@@ -24,7 +24,6 @@ body {
       align-items: center;
       flex-direction: column;
       .header-img-container {
-         
          margin-top: 24px;
          max-width: 302px;
          width: 100%;
@@ -33,26 +32,25 @@ body {
          background-image: url("../images/Rectangle Copy.png");
          background-repeat: no-repeat;
          background-size: cover;
-         
          .hover-box{
             position: relative;
             width: 100%;
             height: 100%;
             opacity: 0;
-          .hover-box-eye{
-               position: absolute;
-               width: 100%;
-               cursor: pointer;
-               background-image: url("../images/ShapeEye.png");
-               background-repeat: no-repeat;
-               height: 100%;
-               background-position: center;
-            }
             .hover-box-back{
                position: absolute;
                width: 100%;
                cursor: pointer;
                background-image: url("../images/Rectangle Copy 2.png");
+               background-repeat: no-repeat;
+               height: 100%;
+               background-position: center;
+            }
+          .hover-box-eye{
+               position: absolute;
+               width: 100%;
+               cursor: pointer;
+               background-image: url("../images/ShapeEye.png");
                background-repeat: no-repeat;
                height: 100%;
                background-position: center;
