@@ -22,6 +22,11 @@ body main .header-img {
   margin-top: 24px;
   max-width: 302px;
   width: 100%;
+  cursor: pointer;
+}
+body main .header-img:hover {
+  background-color: #00FFF8;
+  opacity: 0.8;
 }
 body main h2 {
   margin-top: 24px;
@@ -33,6 +38,10 @@ body main h2 {
   font-family: Outfit;
   line-height: 28px;
   letter-spacing: 0px;
+  cursor: pointer;
+}
+body main h2:hover {
+  color: #00FFF8;
 }
 body main .desc-text {
   color: #8BACD9;
@@ -52,6 +61,16 @@ body main .info-container {
   width: 100%;
   max-width: 302px;
   margin-top: 24px;
+  position: relative;
+}
+body main .info-container::after {
+  content: "";
+  position: absolute;
+  max-width: 302px;
+  width: 100%;
+  background-color: #2E405A;
+  height: 2px;
+  top: 44px;
 }
 body main .etherium-price {
   color: #00FFF8;
@@ -108,4 +127,8 @@ body main .footer-text {
 }
 body main .footer-text span {
   color: #fff;
+  cursor: pointer;
+}
+body main .footer-text span:hover {
+  color: #00FFF8;
 }/*# sourceMappingURL=style.css.map */
