@@ -22,16 +22,30 @@ body {
       display: flex;
       align-items: center;
       flex-direction: column;
-      .header-img {
+      .header-img-container {
          margin-top: 24px;
          max-width: 302px;
          width: 100%;
          cursor: pointer;
+         height: 302px;
+         background-image: url("../images/Rectangle Copy.png");
+         background-repeat: no-repeat;
+         background-size: cover;
+         .hover-box-eye{
+         width: 100%;
+         cursor: pointer;
+         background-image: url("../images/ShapeEye.png");
+         background-repeat: no-repeat;
+         height: 100%;
+         left: 129px;
+         top: 136px;
+         opacity: 0;
+         background-position: center;
          &:hover{
-         background-color: #00FFF8;
-         opacity: 0.8;
+            opacity: 1;
          }
       }
+   }
       h2 {
          margin-top: 24px;
          color: #fff;

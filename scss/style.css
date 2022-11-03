@@ -18,15 +18,29 @@ body main {
   align-items: center;
   flex-direction: column;
 }
-body main .header-img {
+body main .header-img-container {
   margin-top: 24px;
   max-width: 302px;
   width: 100%;
   cursor: pointer;
+  height: 302px;
+  background-image: url("../images/Rectangle Copy.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-body main .header-img:hover {
-  background-color: #00FFF8;
-  opacity: 0.8;
+body main .header-img-container .hover-box-eye {
+  width: 100%;
+  cursor: pointer;
+  background-image: url("../images/ShapeEye.png");
+  background-repeat: no-repeat;
+  height: 100%;
+  left: 129px;
+  top: 136px;
+  opacity: 0;
+  background-position: center;
+}
+body main .header-img-container .hover-box-eye:hover {
+  opacity: 1;
 }
 body main h2 {
   margin-top: 24px;
