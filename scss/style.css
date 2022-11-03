@@ -8,6 +8,7 @@ body {
   align-items: center;
 }
 body main {
+  position: relative;
   max-width: 350px;
   width: 100%;
   background-color: #15263F;
@@ -28,18 +29,31 @@ body main .header-img-container {
   background-repeat: no-repeat;
   background-size: cover;
 }
-body main .header-img-container .hover-box-eye {
+body main .header-img-container .hover-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+body main .header-img-container .hover-box .hover-box-eye {
+  position: absolute;
   width: 100%;
   cursor: pointer;
   background-image: url("../images/ShapeEye.png");
   background-repeat: no-repeat;
   height: 100%;
-  left: 129px;
-  top: 136px;
-  opacity: 0;
   background-position: center;
 }
-body main .header-img-container .hover-box-eye:hover {
+body main .header-img-container .hover-box .hover-box-back {
+  position: absolute;
+  width: 100%;
+  cursor: pointer;
+  background-image: url("../images/Rectangle Copy 2.png");
+  background-repeat: no-repeat;
+  height: 100%;
+  background-position: center;
+}
+body main .header-img-container .hover-box:hover {
   opacity: 1;
 }
 body main h2 {
@@ -145,4 +159,30 @@ body main .footer-text span {
 }
 body main .footer-text span:hover {
   color: #00FFF8;
+}
+
+@media (max-width: 480px) {
+  body {
+    height: 667px;
+    width: 480px;
+  }
+  body main {
+    height: 523px;
+  }
+  body main .header-img-container {
+    max-width: 278px;
+    height: 278px;
+  }
+  body main .desc-text {
+    margin-top: 8px;
+  }
+  body main .info-container {
+    margin-top: 16px;
+  }
+  body main .info-container::after {
+    top: 31px;
+  }
+  body main .footer {
+    margin-top: 25px;
+  }
 }/*# sourceMappingURL=style.css.map */
