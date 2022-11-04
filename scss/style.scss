@@ -168,7 +168,8 @@ body {
 @media (max-width:480px){
    body{
       height: 667px;
-      width: 480px;
+      max-width: 480px;
+      width: 100%;
       main {
          height: 523px;
          .header-img-container{

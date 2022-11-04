@@ -165,7 +165,8 @@ body main .footer-text span:hover {
 @media (max-width: 480px) {
   body {
     height: 667px;
-    width: 480px;
+    max-width: 480px;
+    width: 100%;
   }
   body main {
     height: 523px;
